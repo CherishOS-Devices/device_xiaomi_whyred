@@ -544,3 +544,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
