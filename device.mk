@@ -414,7 +414,9 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     fstab.qcom \
     init.gpuboost.rc \
-    init.gpuboost.sh
+    init.gpuboost.sh \
+    init.cpuboost.rc \
+    init.cpuboost.sh
 
 # RCS
 PRODUCT_PACKAGES += \
