@@ -412,7 +412,9 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    fstab.qcom
+    fstab.qcom \
+    init.gpuboost.rc \
+    init.gpuboost.sh
 
 # RCS
 PRODUCT_PACKAGES += \

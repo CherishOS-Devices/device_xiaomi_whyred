@@ -33,3 +33,8 @@ vendor.powerhal.init                    u:object_r:power_prop:s0
 vendor.powerhal.rendering               u:object_r:power_prop:s0
 vendor.powerhal.state                   u:object_r:power_prop:s0
 
+# HAL3
+persist.camera.HAL3.enable                    u:object_r:camera_prop:s0
+
+# GPUboost
+persist.gpuboost.profile           u:object_r:gpuboost_prop:s0
