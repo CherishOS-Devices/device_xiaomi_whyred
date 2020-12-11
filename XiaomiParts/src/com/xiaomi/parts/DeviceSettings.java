@@ -39,7 +39,6 @@ import com.xiaomi.parts.preferences.CustomSeekBarPreference;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
 import com.xiaomi.parts.preferences.VibratorStrengthPreference;
-import com.xiaomi.parts.preferences.YellowFlashPreference;
 import com.xiaomi.parts.SuShell;
 import com.xiaomi.parts.SuTask;
 
@@ -114,8 +113,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private CustomSeekBarPreference mWhiteTorchBrightness;
     private CustomSeekBarPreference mYellowTorchBrightness;
-    private LedBlinkPreference mLedBlink;
-    private YellowFlashPreference mYellowFlash;
     private SecureSettingSwitchPreference mHighAudio;
     private SecureSettingSwitchPreference mMsmThermal;
     private SecureSettingSwitchPreference mCoreControl;
@@ -134,7 +131,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private CustomSeekBarPreference mMicrophoneGain;
     private CustomSeekBarPreference mEarpieceGain;
     private CustomSeekBarPreference mSpeakerGain;
-    private SecureSettingSwitchPreference mFastcharge;
     private SecureSettingSwitchPreference mBacklightDimmer;
     private SecureSettingSwitchPreference mTouchboost;
     private SecureSettingListPreference mGPUBOOST;
@@ -269,11 +265,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mCPUBOOST.setSummary(mCPUBOOST.getEntry());
         mCPUBOOST.setOnPreferenceChangeListener(this);
 
-        mYellowFlash = (YellowFlashPreference) findPreference(KEY_FLASH);
-        if (mYellowFlash != null) {
-            mYellowFlash.setEnabled(YellowFlashPreference.isSupported());
-        }
-
         if (FileUtils.fileWritable(MSM_THERMAL_PATH)) {
             mMsmThermal = (SecureSettingSwitchPreference) findPreference(PERF_MSM_THERMAL);
             mMsmThermal.setChecked(FileUtils.getFilesValueAsBoolean(MSM_THERMAL_PATH, true));
@@ -312,11 +303,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mTCP.setValue(FileUtils.getStringProp(TCP_SYSTEM_PROPERTY, "0"));
         mTCP.setSummary(mTCP.getEntry());
         mTCP.setOnPreferenceChangeListener(this);
-
-        mLedBlink = (LedBlinkPreference) findPreference(PREF_CHARGING_LED);
-        if (mLedBlink != null) {
-            mLedBlink.setEnabled(LedBlinkPreference.isSupported());
-        }
 
         SwitchPreference fpsInfo = (SwitchPreference) findPreference(PREF_KEY_FPS_INFO);
         fpsInfo.setChecked(prefs.getBoolean(PREF_KEY_FPS_INFO, false));

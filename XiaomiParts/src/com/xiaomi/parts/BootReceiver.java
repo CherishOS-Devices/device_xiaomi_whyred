@@ -27,7 +27,6 @@ import android.content.SharedPreferences;
 import android.os.SELinux;
 import android.util.Log;
 import android.widget.Toast;
-import com.xiaomi.parts.preferences.LedBlinkPreference;
 import com.xiaomi.parts.preferences.VibratorStrengthPreference;
 
 import com.xiaomi.parts.R;

@@ -177,11 +177,6 @@
             android:summary="@string/cpucore_summary"
             android:icon="@drawable/ic_cpucore" 
             android:title="@string/cpucore_title" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="misc"
-        android:title="@string/misc_title">
 
         <com.xiaomi.parts.preferences.SecureSettingListPreference
             android:defaultValue="0"
@@ -227,18 +222,6 @@
         android:icon="@drawable/ic_power" />
 
 </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="chargingled"
-        android:title="@string/chargingled_title">
-
-        <com.xiaomi.parts.preferences.LedBlinkPreference
-            android:defaultValue="3"
-            android:key="charging_led"
-            android:icon="@drawable/ic_led"
-            android:title="@string/led_blinking_title" />
-
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="audio"
