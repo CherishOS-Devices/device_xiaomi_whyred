@@ -161,6 +161,8 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                 DeviceSettings.PREF_MSM_TOUCHBOOST, 0));
         // Dirac
         context.startService(new Intent(context, DiracService.class));
+       // FileUtils.setValue(DeviceSettings.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
+       //         DeviceSettings.PREF_USB_FASTCHARGE, 0));
 
        // Ambient
         context.startService(new Intent(context, SensorsDozeService.class));
