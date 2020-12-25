@@ -219,9 +219,9 @@
     <string name="switch_bar_off">Off</string>
 
     <!-- Touchboost -->
-    <string name="Boost_title">Touchboost</string>
-    <string name="Touchboost_title">Enable Touchboost</string>
-    <string name="Touchboost_summary">Boost cpu when touch detected for soomth experience</string>
+    <string name="boost_title">Touchboost</string>
+    <string name="touchboost_title">Enable Touchboost</string>
+    <string name="touchboost_summary">Boost cpu when touch detected for soomth experience</string>
 
     <!-- GPU Boost Profiles -->
     <string name="gpuboost_title">GPU Boost</string>
